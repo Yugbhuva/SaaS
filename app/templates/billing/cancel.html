@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}Payment Cancelled - {{ config.APP_NAME }}{% endblock %}
+
+{% block content %}
+<div class="min-h-screen flex items-center justify-center">
+    <div class="max-w-md w-full text-center">
+        <div class="bg-gray-100 p-4 rounded-full w-20 h-20 mx-auto mb-6 flex items-center justify-center">
+            <svg class="w-10 h-10 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+        </div>
+        <h1 class="text-3xl font-bold text-gray-900 mb-4">Payment Cancelled</h1>
+        <p class="text-gray-600 mb-8">Your payment was cancelled. No charges were made to your account.</p>
+        <div class="space-x-4">
+            <a href="{{ url_for('pricing') }}" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">
+                Try Again
+            </a>
+            <a href="{{ url_for('index') }}" class="text-gray-600 hover:text-gray-800">
+                Go Home
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}

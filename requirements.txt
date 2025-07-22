@@ -1,0 +1,14 @@
+Flask
+Flask-SQLAlchemy
+Flask-Login
+Flask-WTF
+WTForms
+Werkzeug
+python-dotenv
+stripe
+gunicorn
+psycopg-binary
+email-validator
+itsdangerous
+jwt
+PyJWT
